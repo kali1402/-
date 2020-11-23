@@ -12,5 +12,5 @@
 > 1. 
 
 # 프로그래밍 상식
-> 1. 안드로이드 명\n
+> 1. 안드로이드 명<br>
 ![](https://github.com/kali1402/-/blob/main/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C%20%EB%AA%85.PNG?raw=true)
