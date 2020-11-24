@@ -69,20 +69,20 @@
 >>> __Tracert -d host (d 옵션은 DNS reverse look-up을 시도하지 말라는 것)__
 >> ### 2. Ping
 >>> __호스트 사이에서 물리적인 연결을 수립하기 위해서 상태를 확인할 수 있는 명렁어__
-  ping [옵션] IP 주소
-   옵션설명
- -t : ctrl + C를 누를 때까지 특정 호스트로 ping 한다.
- -a : IP주소를 호스트 이름으로 풀이한다.
- -n count : 전달할 에코 요청 수(밀리초 단위)
- -l size  : 버퍼크기를 지정한다.
- -f : 패킷에 don't Fragment 플래그를 설정한다.
- -i TTL : TTL(Time To Live)을 나타낸다.
- -v TOS : Type of Service를 나타낸다.
- -r count : 라우트를 레코드해서 홉을 카운트한다.
- -s count : 홉 카운트데 대한 타임 스태프
- -j host-list : 호스트 리스트를 갖고 있는 loose 라우트
- -k host-list : 호스트 리스트를 갖고 있는 strict 라우트
- -w timeout : 최대 응담 대기 시간(밀리초 단위)
+>>> __ping [옵션] IP 주소__
+>>> __옵션설명
+>>> - -t : ctrl + C를 누를 때까지 특정 호스트로 ping 한다.
+>>> - -a : IP주소를 호스트 이름으로 풀이한다.
+>>> - -n count : 전달할 에코 요청 수(밀리초 단위)
+>>> - -l size  : 버퍼크기를 지정한다.
+>>> - -f : 패킷에 don't Fragment 플래그를 설정한다.
+>>> - -i TTL : TTL(Time To Live)을 나타낸다.
+>>> - -v TOS : Type of Service를 나타낸다.
+>>> - -r count : 라우트를 레코드해서 홉을 카운트한다.
+>>> - -s count : 홉 카운트데 대한 타임 스태프
+>>> - -j host-list : 호스트 리스트를 갖고 있는 loose 라우트
+>>> - -k host-list : 호스트 리스트를 갖고 있는 strict 라우트
+>>> - -w timeout : 최대 응담 대기 시간(밀리초 단위)__
  
 3) ARP(Address Resolrution Protocol)
 - IP 주소 대 하드웨어 주소 맵을 보여준다.
