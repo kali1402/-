@@ -234,6 +234,537 @@ export default App;
 
 - vscode 의 아래의 확장프로그램을 이용하면 styled-components 의 명령 및 색상을 보다 보기쉽게 관리 할 수 있다.
 - `vscode-styled-components`
+
+## 4. 리액트 (4)
+## 개요
+
+- 투두리스트를 만들어보자.
+
+## 프로젝트 생성
+
+- `npx create-react-app todo-list` 명령을 통해서 프로젝트를 생성해 준다.
+- styped-components 와 react-icons 를  사용하므로 yarn add 명령을 통해서 해당 라이브러리를 설치해준다.
+`yarn add react-icons styled-components`
+- react-icons 는 프로젝트에 사용할 아이콘으로 해당 페이지에서 원하는 아이콘을 확인후 사용하면 된다.
+
+    [React Icons](https://react-icons.netlify.com/#/icons/md)
+
+## 필요한 컴포넌트
+
+### Templete
+
+- todolist 만들어줄 화면 구성
+
+### Head
+
+- todolist 상단에 현재 날짜 및 남은 할일 표기
+
+### List
+
+- 할일 목록
+
+### Item
+
+- 할일
+
+### Add
+
+- 할일 추가 버튼 및 텍스트 박스
+
+## 컴포넌트 생성
+
+### 기본 바탕 회색처리
+
+- 특정 컴포넌트에 스타일을 주는게 아니라 전체 컴포넌트에 스타일 적용을 원하는경우 styled-components 의 createGlobalStyle 응 사용한다.
+
+    ```jsx
+    import React from 'react';
+    import {createGlobalStyle} from 'styled-components';
+
+    const GlobalStyle = createGlobalStyle`
+      body {
+        background: gray;
+      }
+    `;
+
+    function App() {
+      return (
+        <>
+          <GlobalStyle />
+          <div>바탕화면이 회색 처리 되었나?</div>
+        </>
+      );
+    }
+
+    export default App;
+    ```
+
+### Templete 컴포넌트 생성
+
+- 배경이 회색이기 때문에 해당 컴포넌트는 하얀색으로 한다.
+- 컴포넌트를 화면 중앙에 위치시키려면 `margin: 0 auto;` 스타일을 적용해야 한다.
+- 헤드, 리스트등 컴포넌트 위치를 좌우 정렬이 아닌 상하 정렬로 해야 하는데 그것을 위해서는 
+`flex-direction`옵션을 `column` 으로 설정해야 한다.
+( 요 옵션을 뺴먹면 컴포넌트 정렬이 위아래가 아닌 좌우로 된다. )
+[https://developer.mozilla.org/ko/docs/Web/CSS/flex-direction](https://developer.mozilla.org/ko/docs/Web/CSS/flex-direction)
+
+```jsx
+import React from 'react';
+import styled from 'styled-components';
+import Head from './Head';
+import List from './List';
+
+const TemplateBody = styled.div`
+  width: 512px;
+  height: 768px;
+  background: white;
+  border-radius: 16px;
+  display: flex;
+  margin: 0 auto;
+
+  flex-direction: column;
+`;
+
+function Template () {
+  return (
+    <TemplateBody>
+      <Head />
+      <List />
+    </TemplateBody>
+  );
+}
+
+export default Template;
+```
+
+### Head  컴포넌트 생성
+
+- 날짜, 요일, 남아있는 할일수를 표기해줄 컴포넌트를 생성한다.
+- 하단의 리스트와 구분이 필요하므로 border-bottom 스타일을 이용하여 구분선을 그어준다.
+
+```jsx
+import React from 'react';
+import styled from 'styled-components';
+
+const HeadBody = styled.div`
+  color: black;
+  border-bottom: 1px solid black;
+  height: 200px;
+  width: 100%;
+  text-align: center;
+`;
+
+const TodoLeft = styled.div`
+  color: red;
+  padding-top: 30px;
+`;
+
+function Head () {
+  return (
+    <HeadBody>
+      <h1>2020년 6월 17일</h1>
+      <h3>수요일</h3>
+      <TodoLeft>할일 1개 남음</TodoLeft>
+    </HeadBody>
+  );
+}
+
+export default Head;
+```
+
+### List 컴포넌트 생성
+
+- 할일 목록을 보여줄 리스트를 생성한다.
+- padding 을 넣어주지 않으면 텍스트가 벽에 붙어 이상하니 styled-components 설정시 padding 을 넣어주도록 하자.
+
+```jsx
+import React from 'react';
+import styled from 'styled-components';
+
+const ListBody = styled.div`
+  width: 100%;
+  overflow-y: auto;
+  padding-left: 50px;
+  padding-top: 50px;
+`;
+
+function List () {
+  return (
+    <ListBody>
+      <div>할일 1</div>
+      <div>할일 2</div>
+      <div>할일 3</div>
+    </ListBody>      
+  );
+}
+
+export default List;
+```
+
+### Item 컴포넌트 생성
+
+- 할일을 나타낼 item 컴포넌트를 만들어준다.
+- check 화면은 checkbox 를 사용하지않고 div 로 원모양을 만들어 체크되었을때 MdDone 이미지가 원 안에 노출될 수 있도록 구현한다.
+- check 되었을떄의 처리를 위해 done poprs 를 사용하고 체크시 텍스트 색상을 변경하도록 한다.
+- ItemBody 에서 Remove 를 참조해서 사용하고 있기 때문에 Remove 는 ItemBody 보다 위에 있어야 코드 오류가 발생되지 않는다.
+
+```jsx
+import React, { useState } from 'react';
+import styled, { css } from 'styled-components';
+import { MdDone, MdDelete } from 'react-icons/md';
+
+const Remove = styled.div`
+  display: none;
+  color: gray;
+  font-size: 24px;
+  cursor: pointer;
+  &:hover {
+    color: red;
+  }
+`;
+
+const ItemBody = styled.div`
+  display: flex;
+  &:hover {
+    ${Remove} {
+      display: block;
+    }
+  }
+	padding-top: 10px;
+  padding-bottom: 10px;
+`;
+
+const CheckCircle = styled.div`
+  width: 32px;
+  height: 32px;  
+  border: 1px solid silver;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  ${props => props.done && css`
+    border-color: black;
+  `}
+`;
+
+const Text = styled.div`
+  padding-left: 15px;
+  font-size: 21px;
+  color: black;
+  width: 70%;
+  ${props => props.done && css`
+    color: silver;
+  `}
+`;
+
+function Item () {
+
+  const [ done, setDone ] = useState(false);
+
+  const onToggle = () => {
+    setDone(status => !status);
+  }
+
+  return (
+    <ItemBody>
+      <CheckCircle done={done} onClick={onToggle}>
+        {done && <MdDone />}
+      </CheckCircle>
+      <Text done={done}>할일</Text>
+      <Remove>
+        <MdDelete />
+      </Remove>      
+    </ItemBody>
+  );
+}
+
+export default Item;
+```
+
+### Add 컴포넌트 생성
+
+- 할일을 추가할때 사용할 Add 컴포넌트를 추가해준다.
+- 할일을 입력할 텍스트와 버튼을 구현해주면 된다.
+
+```jsx
+import React, {useState} from 'react';
+import styled from 'styled-components';
+
+const AddBody = styled.div`
+  display: flex;
+`;
+
+const InputBox = styled.input`
+  width: 180px;
+  height: 30px;
+  margin-left: 110px;
+`;
+
+const Button = styled.button`
+  cursor: pointer;
+  width: 80px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+function Add () {
+  return (
+    <AddBody>
+      <InputBox />
+      <Button>할일등록</Button>
+    </AddBody>
+  );
+}
+
+export default Add;
+```
+
+## 데이터 작업
+
+### 데이터 셋팅
+
+- App.js 에 출력할 데이터를 넣어준다.
+- 해당 데이터는 할일 추가, 삭제등으로 인해 변경사항이 반영되어야 하므로 useState 를 통해 생성해준다.
+
+```jsx
+const [todos, setTodos] = useState([
+    {
+      id: 1,
+      checked: true,
+      text: '출근하기'
+    },
+    {
+      id: 2,
+      checked: false,
+      text: '퇴근하기'
+    }
+  ]);
+```
+
+- 할일 체크, 할일 추가, 할일 삭제시 사용될 함수를 선언후 하위 컴포넌트에 넘겨준다.
+
+```jsx
+// 할일 체크
+const onToggle = (id) => {
+    setTodos(todos.map(o => {
+      const checked = o.id === id ? !o.checked : o.checked;
+      
+      return {
+        ...o,
+        checked
+      }
+    }));
+  }
+
+  // 할일 삭제
+  const onRemove = (id) => {
+    setTodos(todos.filter(o => o.id !== id));
+  }
+  
+  // 할일 추가
+  const onAdd = (text) => {
+    const lastID = todos.map(o => o.id).sort((a, b) => {
+      return b - a;
+    })[0];
+
+    const newTodo = {
+      id: lastID + 1,
+      checked: false,
+      text
+    };
+
+    setTodos(todos.concat(newTodo));
+  }
+```
+
+### 각 컴포넌트 별 props 처리
+
+- Template 컴포넌트에서 넘겨받은 props 는 하위 컴포넌트로 그대로 넘겨준다.
+
+```jsx
+import React from 'react';
+import styled from 'styled-components';
+import Head from './Head';
+import List from './List';
+import Add from './Add';
+
+const TemplateBody = styled.div`
+  width: 512px;
+  height: 768px;
+  background: white;
+  border-radius: 16px;
+  display: flex;
+  margin: 0 auto;
+
+  flex-direction: column;
+`;
+
+function Template ({ todos, onToggle, onRemove, onAdd }) {
+  return (
+    <TemplateBody>
+      <Head />
+      <List todos={todos} onToggle={onToggle} onRemove={onRemove} />
+      <Add onAdd={onAdd} />
+    </TemplateBody>
+  );
+}
+
+export default Template;
+```
+
+- List 컴포넌트에서는 넘겨받은 Todos 를 루프처리하고 역시 Item 컴포넌트에 넘겨받은 props 중 필요한 데이터를 넘겨준다.
+
+```jsx
+import React from 'react';
+import styled from 'styled-components';
+import Item from './Item';
+
+const ListBody = styled.div`
+  width: 100%;
+  height: 400px;
+  overflow-y: auto;
+  padding-left: 50px;
+  padding-top: 50px;
+`;
+
+function List ({ todos, onToggle, onRemove }) {
+  return (
+    <ListBody>
+      {todos.map(o => (
+        <Item key={o.id} id={o.id} checked={o.checked} onToggle={onToggle} onRemove={onRemove}>{o.text}</Item>
+      ))}
+    </ListBody>      
+  );
+}
+
+export default List;
+```
+
+- Item 컴포넌트에서는 넘겨받은 클릭 및 일정제거 이벤트를 반영해준다.
+
+```jsx
+import React from 'react';
+import styled, { css } from 'styled-components';
+import { MdDone, MdDelete } from 'react-icons/md';
+
+const Remove = styled.div`
+  display: none;
+  color: gray;
+  font-size: 24px;
+  cursor: pointer;
+  &:hover {
+    color: red;
+  }
+`;
+
+const ItemBody = styled.div`
+  display: flex;
+  &:hover {
+    ${Remove} {
+      display: block;
+    }
+  }
+  padding-top: 10px;
+  padding-bottom: 10px;
+`;
+
+const CheckCircle = styled.div`
+  width: 32px;
+  height: 32px;  
+  border: 1px solid silver;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  ${props => props.done && css`
+    border-color: black;
+  `}
+`;
+
+const Text = styled.div`
+  padding-left: 15px;
+  font-size: 21px;
+  color: black;
+  width: 70%;
+  ${props => props.done && css`
+    color: silver;
+  `}
+`;
+
+function Item ({ children, checked, onToggle, id, onRemove }) {
+  return (
+    <ItemBody>
+      <CheckCircle done={checked} onClick={() => onToggle(id)}>
+        {checked && <MdDone />}
+      </CheckCircle>
+      <Text done={checked}>{children}</Text>
+      <Remove onClick={() => onRemove(id)}>
+        <MdDelete />
+      </Remove>      
+    </ItemBody>
+  );
+}
+
+export default Item;
+```
+
+- Add 컴포넌트에서는 추가되는 할일을 todos 에 추가하는 작업을 추가한다.
+
+```jsx
+import React, {useState} from 'react';
+import styled from 'styled-components';
+
+const AddBody = styled.div`
+  display: flex;
+`;
+
+const InputBox = styled.input`
+  width: 180px;
+  height: 30px;
+  margin-left: 110px;
+`;
+
+const Button = styled.button`
+  cursor: pointer;
+  width: 80px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+function Add ({ onAdd }) {
+
+  const [text, setText] = useState('');
+
+  const onChange = (e) => {
+    setText(e.target.value);
+  }
+
+  const addTodo = () => {
+    onAdd(text);
+  }
+
+  return (
+    <AddBody>
+      <InputBox onChange={onChange} />
+      <Button onClick={addTodo}>할일등록</Button>
+    </AddBody>
+  );
+}
+
+export default Add;
+```
+
+## 마치며
+
+- 전체적인 구동이 정상적으로 되는지 확인한다.
 # 프로그래밍 상식
 > ## 1. 안드로이드 란?
 >> __`안드로이드는 구글에서 만든 스마트폰용 운영체제입니다. 운영체제와 미들웨어, 사용자 인터페이스, 어플리케이션, MMS 서비스 등을 하나로 묶어 서비스를 제공하며 다양한 어플리케이션을 만들어 설치하면 실행될 수 있도록 구성된 어플리케이션 플랫폼이라고도 볼 수 있습니다. 많은 사람들이 iOS(애플 운영체제)에 견주어 스마트폰과 태블릿으로 안드로이드 운영체제를 사용하면서, 안드로이드는 세계 모바일 시장에서 가장 성공한 OS라는 평가를 받고있습니다. 안드로이드는 리눅스(Linux)를 기반으로 제작되었고 언어는 자바를 사용합니다.`__<br>
