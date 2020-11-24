@@ -1,23 +1,3 @@
-# 나의 포트폴리오
-> ### 1. Yacht_dice 게임 만들기 (html,js,css)
-> - __[『코드 보기』](https://github.com/kali1402/yacht_dice) [『플레이 해보기』](http://yacht.kro.kr/)__
-> ### 2. 디스코드 프로그램에서 봇 만들기 (Python)
-> - __[『코드 보기』](https://github.com/kali1402/bot)__
-> ### 3. 삼일상업고등학교 점심메뉴 폰으로 알림성정 (js)
-> - __[『코드 보기』](https://github.com/kali1402/samillunch-webview)__
-> ### 4. 일자리 리스트 보여주는 앱 (js)
-> - __[『코드 보기』](https://github.com/kali1402/Job_app)__
-> ### 5. 3가지 종류의 뉴스 리스트 앱 (js)
-> - __[『코드 보기』](https://github.com/kali1402/news_app)__
-> ### 6. 계산기 (html,js,css)
-> - __[『코드 보기』](https://github.com/kali1402/kali/blob/master/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EC%97%B0%EC%8A%B5.html) [『플레이 해보기』](http://xn--989a00a691b.p-e.kr/)__
-> ### 7. 신과함께 영화에서 감독,주연들 출력 (html,js,css)
-> - __[『코드 보기』](https://github.com/kali1402/kali/blob/master/god.html)__
-> ### 8. 검 강화하기 (html,js,css)
-> - __깃허브 주소 X 미완성 추후 정리예정 [『플레이 해보기』](http://swordupgrade.kro.kr/)__
-
-# IT배움터
-> 1. 
 
 # 프로그래밍 상식
 > ## 1. 안드로이드 란?
@@ -70,19 +50,19 @@
 >> ### 2. Ping
 >>> __호스트 사이에서 물리적인 연결을 수립하기 위해서 상태를 확인할 수 있는 명렁어__
 >>> __ping [옵션] IP 주소__
->>> __옵션설명
->>> - -t : ctrl + C를 누를 때까지 특정 호스트로 ping 한다.
->>> - -a : IP주소를 호스트 이름으로 풀이한다.
->>> - -n count : 전달할 에코 요청 수(밀리초 단위)
->>> - -l size  : 버퍼크기를 지정한다.
->>> - -f : 패킷에 don't Fragment 플래그를 설정한다.
->>> - -i TTL : TTL(Time To Live)을 나타낸다.
->>> - -v TOS : Type of Service를 나타낸다.
->>> - -r count : 라우트를 레코드해서 홉을 카운트한다.
->>> - -s count : 홉 카운트데 대한 타임 스태프
->>> - -j host-list : 호스트 리스트를 갖고 있는 loose 라우트
->>> - -k host-list : 호스트 리스트를 갖고 있는 strict 라우트
->>> - -w timeout : 최대 응담 대기 시간(밀리초 단위)__
+>>> __옵션설명__
+>>> __- -t : ctrl + C를 누를 때까지 특정 호스트로 ping 한다.__
+>>> __- -a : IP주소를 호스트 이름으로 풀이한다.__
+>>> __- -n count : 전달할 에코 요청 수(밀리초 단위)__
+>>> __- -l size  : 버퍼크기를 지정한다.__
+>>> __- -f : 패킷에 don't Fragment 플래그를 설정한다.__
+>>> __- -i TTL : TTL(Time To Live)을 나타낸다.__
+>>> __- -v TOS : Type of Service를 나타낸다.__
+>>> __- -r count : 라우트를 레코드해서 홉을 카운트한다.__
+>>> __- -s count : 홉 카운트데 대한 타임 스태프__
+>>> __- -j host-list : 호스트 리스트를 갖고 있는 loose 라우트__
+>>> __- -k host-list : 호스트 리스트를 갖고 있는 strict 라우트__
+>>> __- -w timeout : 최대 응담 대기 시간(밀리초 단위)__
  
 3) ARP(Address Resolrution Protocol)
 - IP 주소 대 하드웨어 주소 맵을 보여준다.
