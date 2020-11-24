@@ -35,8 +35,11 @@
 >> ![](https://lh3.googleusercontent.com/proxy/2IklZi7pYuLBo4S5Nkt_DE7ByCZn77jZAy98MMI2EqqSY-V6lY7B6hrJcAbKrivJ02--KAMywvmts--cUOcoXl15Nj1vBYNZoOj5iEXH_tWOOO_xnjHjKoDuoaPwBnAXXFx9P6i8rya7P6GIkfUprhGn19CQk4u72xC3A1o)
 >> [『사진 출처』](http://wiki.hash.kr/index.php/OSI_7_%EA%B3%84%EC%B8%B5)
 > ## 8. HTML, CSS는 프로그래밍 언어가 아니다.
+>> [『글 출처』](https://medium.com/@yjk9313/html%EC%9D%B4-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%96%B8%EC%96%B4%EA%B0%80-%EC%95%84%EB%8B%8C-%EC%9D%B4%EC%9C%A0-e7ccdf2ea24b)
 >> ### HTML은 프로그래밍 언어가 아니다. Hyper Text Mark up Language, 한마디로 마크업 언어이다(mark up = 표시하다)
 >>> __프로그래밍 언어란, 컴퓨터에서 실행 될 프로그램을 만들기 위해 사람의 문자로 만들어 진 수단이다.__<br>
 >>> __-파이썬, 자바스크립트, 자바, C언어 등이 대표적이다. 이들은 사람의 생각을 컴퓨터가 연산 처리 할 수 있도록 그 내용을 문자로 전달하는 수단이다.__<br>
 >>> __그러나 HTML은 단독으로 프로그램을 만들 수 없다. HTML은 컴퓨터에게 어떤것이 \<Title>인지, \<Body>,\<Main>인지 구분할 수 있게 하는 언어이다. 말 그대로 Mark up(표시)하는 언어이다. HTMl을 보기 좋게 꾸며주는 CSS또한 마찬가지이다.__<br>
 >>> __정리하자면, HTML은 컴퓨터에게 구획을 나누어 인식시켜주는 Mark up 언어이고, CSS는 사람이 보기 좋게 디자인을 변경시켜주는 언어이다.__<br>
+>> [『사진 출처』](https://medium.com/@yjk9313/html%EC%9D%B4-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%96%B8%EC%96%B4%EA%B0%80-%EC%95%84%EB%8B%8C-%EC%9D%B4%EC%9C%A0-e7ccdf2ea24b)<br>
+>> ![](https://miro.medium.com/max/700/0*rCoIWITij3nvAziF.jpg)
