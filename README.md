@@ -22,12 +22,12 @@
 # 프로그래밍 상식
 > ## 1. 안드로이드 란?
 >> __`안드로이드는 구글에서 만든 스마트폰용 운영체제입니다. 운영체제와 미들웨어, 사용자 인터페이스, 어플리케이션, MMS 서비스 등을 하나로 묶어 서비스를 제공하며 다양한 어플리케이션을 만들어 설치하면 실행될 수 있도록 구성된 어플리케이션 플랫폼이라고도 볼 수 있습니다. 많은 사람들이 iOS(애플 운영체제)에 견주어 스마트폰과 태블릿으로 안드로이드 운영체제를 사용하면서, 안드로이드는 세계 모바일 시장에서 가장 성공한 OS라는 평가를 받고있습니다. 안드로이드는 리눅스(Linux)를 기반으로 제작되었고 언어는 자바를 사용합니다.`__<br>
-![](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20130504_35%2Fg_m8494_1367629956733Wq5yx_JPEG%2F%25BE%25C8%25B5%25E5%25B7%25CE%25C0%25CC%25B5%25E5.jpg&type=sc960_832)[『출처』](https://blog.naver.com/g_m8494/150167283271)
+![](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20130504_35%2Fg_m8494_1367629956733Wq5yx_JPEG%2F%25BE%25C8%25B5%25E5%25B7%25CE%25C0%25CC%25B5%25E5.jpg&type=sc960_832)[『사진 출처』](https://blog.naver.com/g_m8494/150167283271)
 > ## 2. 안드로이드 명
->> [『출처』](https://zetawiki.com/wiki/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C_%EB%B2%84%EC%A0%84_%EB%AA%A9%EB%A1%9D) <br>
+>> [『사진 출처』](https://zetawiki.com/wiki/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C_%EB%B2%84%EC%A0%84_%EB%AA%A9%EB%A1%9D) <br>
 ![](https://github.com/kali1402/-/blob/main/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C%20%EB%AA%85.PNG?raw=true)<br><br>
 > ## 3. HTTP
->> ![](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20150120_18%2Fidea_mind_1421744811721wftA6_PNG%2F012015_0906_HTTP1.png&type=sc960_832)[『출처』](https://blog.naver.com/idea_mind/220246518782)
+>> ![](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20150120_18%2Fidea_mind_1421744811721wftA6_PNG%2F012015_0906_HTTP1.png&type=sc960_832)[『사진 출처』](https://blog.naver.com/idea_mind/220246518782)
 >> ### Connectionless :
 >>> __`서버에 요청을 하고 클라이언트가 응답을 받으면 연결을 끊음
 응답을 받으면 연결이 끊어지기 때문에 접속 유지는 최소한으로 할 수 있다. 유저가 많은 웹서비스에서 많은 요청 처리를 가능하게 함
@@ -58,11 +58,100 @@
 >>> __`TRACE : 클라이언트와 목적지 서버 사이에 있는 HTTP Application의 요청/응답을 연속적으로 계속 따라가 자신이 보낸 메세지의 이상유무 파악하기 위한 요청. 서버는 응답 메세지 본문에 자신이 받은 요청 메세지를 넣어 응답. 진단 위해 사용`__ <br>
 >>> __`OPTION : 서버에 특정 리소스가 어떤 메소드를 지원하는지 물어보는 요청`__
 > ## 4. 객체지향언어(Object-Oriented Programming, OOP)란?
->> ![](https://image.shutterstock.com/image-vector/oop-arrows-concept-vector-illustration-260nw-409775206.jpg)[『출처』](https://www.shutterstock.com/ko/search/object+oriented+programming)<br>
+>> ![](https://image.shutterstock.com/image-vector/oop-arrows-concept-vector-illustration-260nw-409775206.jpg)[『사진 출처』](https://www.shutterstock.com/ko/search/object+oriented+programming)<br>
 >> __`객체지향프로그래밍이라는 것은 컴퓨터 프로그래밍의 패러다임 중 하나입니다. 컴퓨터 프로그램을 명령어의 목록으로 보는 시각에서 벗어나 여러 개의 독립된 단위, 즉, "객체" 들의 모임으로 파악하고자 하는 것입니닫. 각각의 개체는 메시지를 주고 받고(Message Passing) 데이터를 처리할 수 있습니다.`__
 > ## 5. DDL, DML, DCL, TCL
->> [『출처』](https://brownbears.tistory.com/180)
+>> [『사진 출처』](https://brownbears.tistory.com/180)
 >> ![](https://github.com/kali1402/-/blob/main/sql.PNG?raw=true)
-> ## 6.
+> ## 6. 네트워크 명령어
+>> ### 1. Tracert
+>>> __지정된 호스트에 도달할 때까지 통과하는 경로의 정보와 지연시간을 추적__
+>>> __Tracert -d host (d 옵션은 DNS reverse look-up을 시도하지 말라는 것)__
+>> ### 2. Ping
+>>> __호스트 사이에서 물리적인 연결을 수립하기 위해서 상태를 확인할 수 있는 명렁어__
+  ping [옵션] IP 주소
+   옵션설명
+ -t : ctrl + C를 누를 때까지 특정 호스트로 ping 한다.
+ -a : IP주소를 호스트 이름으로 풀이한다.
+ -n count : 전달할 에코 요청 수(밀리초 단위)
+ -l size  : 버퍼크기를 지정한다.
+ -f : 패킷에 don't Fragment 플래그를 설정한다.
+ -i TTL : TTL(Time To Live)을 나타낸다.
+ -v TOS : Type of Service를 나타낸다.
+ -r count : 라우트를 레코드해서 홉을 카운트한다.
+ -s count : 홉 카운트데 대한 타임 스태프
+ -j host-list : 호스트 리스트를 갖고 있는 loose 라우트
+ -k host-list : 호스트 리스트를 갖고 있는 strict 라우트
+ -w timeout : 최대 응담 대기 시간(밀리초 단위)
+ 
+3) ARP(Address Resolrution Protocol)
+- IP 주소 대 하드웨어 주소 맵을 보여준다.
+  ARP -s IP주소 : ARP 맵에 해당 IP주소의 하드웨어 주소를 추가한다.
+
+ 
+
+4) Netstat
+- 현재 프로토콜의 상태와 연결을 나타낸다.
+  netstat -ant 1 | findstr 192.168.1.10 : 192.168.1.10 과 매칭되는 목록을 1초마다 갱신해서 띄워준다.
+
+ 
+
+5) Nbtstat
+- IP 어드레스로 해석된 NetBIOS 컴퓨터 이름들의 목록을 보여 준다.
+
+ 
+
+6) Ipconfig/Ifconfig
+ ㄱ. ipconfig : 설치된 네트워크 카드에 대한 현재 구성을 나타낸다.
+  ipconfig /All : 자세한 정보를 나타낸다.
+  ipconfig /Batch[file] : ipconfig 요청에서 파일로 정보를 저장한다.
+  ipconfig /renew-all : 모든 어댑터에 대한 DHCP 리스를 갱신한다.
+  ipconfig /release-all : 모든 어댑터에 대한 DHCP 리스를 해제한다.
+  ipconfig /renew N : 어댑터 N용의 IP 주소에 대한 리스를 갱신한다.
+  ipconfig /release N : 어댑터 N용의 IP 주소에 대한 리스를 해제한다.
+ ㄴ. ifconfig(Linux, Unix) : Network Interface 확인, 인터페이스 업다운, 설정환경 조절, 환경확인
+  ifconfig eth0 down : 이더넷0 다운
+  ifconfig eth0 up : 이더넷0 업
+  ifconfig eth0:1 IP주소 : IP주소로 eth0:1이 활성화된다.(두대의 NIC를 설치한효과)
+  ifconfig eth0:1 netmask 255.255.255.0 : 해당 인터페이스의 서브넷 마스크 변경
+
+ 
+
+7) Nslookup
+- 인터넷 서버 관리자나 또는 사용자가 호스트 이름을 입력하면, 그에 상응하는 인터넷 주소를 찾아주는 프로그램
+   nslookup [-opt ...]             : 기본 서버를 사용하는 대화형 모드
+   nslookup [-opt ...] - server    : 'server'를 사용하는 대화형 모드
+   nslookup [-opt ...] host        : 기본 서버를 사용하는 'host'만 조회
+   nslookup [-opt ...] host server : 'server'를 사용하는 'host'만 조회
+
+ 
+
+
+8) route (라우팅 설정/확인하는 명령)
+-명령어 구성 : route [-f] [-p] [-4|-6] command [destination] [MASK netmask] [gateway] [METRIC metric] [IF interface]
+  -f           모든 게이트웨이 항목의 라우팅 테이블을 지웁니다. 명령 중
+               하나와 함께 이 옵션을 사용하면 명령 실행 전에
+               테이블이 지워집니다.
+  -p           ADD 명령과 함께 이 옵션을 사용하면 시스템을 다시 부팅해도
+               경로가 보존됩니다. 시스템을 다시 시작할 때 기본적으로 경로가
+               보존되지 않습니다. 해당 영구 경로에 항상 영향을 주는
+               다른 모든 명령에 대해서는 무시됩니다.
+  -4           IPv4를 사용합니다.
+  -6           IPv6을 사용합니다.
+  command      수행할 명령
+                 PRINT     경로를 출력합니다.
+                 ADD       경로를 추가합니다.
+                 DELETE    경로를 삭제합니다.
+                 CHANGE    기존 경로를 수정합니다.
+  destination  호스트를 지정합니다.
+  MASK         다음 매개 변수가 'netmask' 값임을 지정합니다.
+  netmask      이 경로 항목에 대한 서브넷 마스크 값을 지정합니다. 지정하지 않으면 기본값 255.255.255.255가 사용됩니다.
+  gateway      게이트웨이를 지정합니다.
+  interface    지정한 경로에 대한 인터페이스 번호입니다.
+  METRIC       대상의 비용과 같은 메트릭을 지정합니다.
+
+
+
+[『글 출처』](https://dinding.tistory.com/24)
 > ## 7.
 > ## 8.
