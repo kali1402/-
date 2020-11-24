@@ -187,6 +187,56 @@ function Counter () {
 
 export default Counter;
 ```
+
+## 3. 리액트 (3)
+## styled-components 란?
+
+- styled-components 는 css 파일을 별도로 생성하지 않고 javascript 파일 안에서 컴포넌트 형식으로 css 를 적용할 수 있는 방법을 말한다.
+- components 이기 때문에 props 를 통한 값 전달이 가능하다.
+- css 파일을 별도로 만들지 않기 때문에 클래스 네임 중복 등의 문제에서 벗어날 수 있다.
+
+## 사용법
+
+### 설치
+
+- `yarn add styled-components`
+위의 명령을 통해 styled-components 를 설치하여 사용 가능하다.
+
+### example
+
+```jsx
+import React from 'react';
+import styled, {css} from 'styled-components';
+
+const Circle = styled.div`
+  width: 5rem;
+  height: 5rem;
+  background: ${props => props.color};
+  border-radius: 50%;
+  ${props => props.huge && css`
+    width: 10rem;
+    height: 10rem;
+  `}
+`;
+
+function App() {
+  return (
+    <>
+      <Circle color="black" />
+      <Circle color="blue" huge />
+    </>    
+  );
+}
+
+export default App;
+```
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/68401e23-0968-412e-bf52-1e1f181dfd4e/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/68401e23-0968-412e-bf52-1e1f181dfd4e/Untitled.png)
+
+### etc
+
+- vscode 의 아래의 확장프로그램을 이용하면 styled-components 의 명령 및 색상을 보다 보기쉽게 관리 할 수 있다.
+- `vscode-styled-components`
 # 프로그래밍 상식
 > ## 1. 안드로이드 란?
 >> __`안드로이드는 구글에서 만든 스마트폰용 운영체제입니다. 운영체제와 미들웨어, 사용자 인터페이스, 어플리케이션, MMS 서비스 등을 하나로 묶어 서비스를 제공하며 다양한 어플리케이션을 만들어 설치하면 실행될 수 있도록 구성된 어플리케이션 플랫폼이라고도 볼 수 있습니다. 많은 사람들이 iOS(애플 운영체제)에 견주어 스마트폰과 태블릿으로 안드로이드 운영체제를 사용하면서, 안드로이드는 세계 모바일 시장에서 가장 성공한 OS라는 평가를 받고있습니다. 안드로이드는 리눅스(Linux)를 기반으로 제작되었고 언어는 자바를 사용합니다.`__<br>
