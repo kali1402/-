@@ -18,37 +18,45 @@
 
 # IT배움터
 > ## 1. 리액트 (1)
->> ## props 정의
->>> - 부모 컴포넌트가 자식 컴포넌트에게 주는 값
->>> - 자식 컴포넌트에서는 props 를 받아서 쓸수 있으나 값을 직접 수정할 수는 없다.
->>> ## 사용법
->>> ### 부모컴포넌트에서..
->>> - html 태그의 attribute 사용하는것과 같이 사용하면 된다.
->>> - 예를 들어 Hello 라는 컴포넌트를 호출하고 있다면 
->>> `<Hello name='kali' />`
->>> 와 같이 name 이라는 props 에 rony 라는 값을 담아 넘길수 있다.
->>> ```jsx
->>> import React, { useState } from 'react';
->>> import Hellow from './components/Hellow';
->>> import Wrapper from './components/Wrapper';
+## 정의
 
->>> function App() {
->>>   return (
->>>     <>
->>>       <Wrapper>
->>>         <Hellow name="rony" color="red" />
->>>         <Hellow color="blue" />
->>>       </Wrapper>      
->>>     </>    
->>>   );
->>> }
+- 부모 컴포넌트가 자식 컴포넌트에게 주는 값
+- 자식 컴포넌트에서는 props 를 받아서 쓸수 있으나 값을 직접 수정할 수는 없다.
 
->>> export default App;
->>> ```
->>> ### 자식 컴포넌트에서..
->>> - 부모 컴포넌트에서 넘어온 값은 props 라는 변수에 할당되어있기 때문에 props 안의 값을 불러서 사용하면 된다.
->>> - 예를 들어 위의 예제에서 넘겨준 name 에 rony 라는 값을 받아서 쓰려면 [props.name](http://props.name) 으로 값을 받아 쓰면 된다.
->>> - 혹시 해당 props 가 넘어오지 않는경우에 defaultProps 를 설정해주면 값이 넘어오지않는경우 해당 값을 사용하게 된다.
+## 사용법
+
+### 부모컴포넌트에서..
+
+- html 태그의 attribute 사용하는것과 같이 사용하면 된다.
+- 예를 들어 Hello 라는 컴포넌트를 호출하고 있다면 
+`<Hello name='rony' />`
+와 같이 name 이라는 props 에 rony 라는 값을 담아 넘길수 있다.
+
+```jsx
+import React, { useState } from 'react';
+import Hellow from './components/Hellow';
+import Wrapper from './components/Wrapper';
+
+function App() {
+  return (
+    <>
+      <Wrapper>
+        <Hellow name="rony" color="red" />
+        <Hellow color="blue" />
+      </Wrapper>      
+    </>    
+  );
+}
+
+export default App;
+```
+
+### 자식 컴포넌트에서..
+
+- 부모 컴포넌트에서 넘어온 값은 props 라는 변수에 할당되어있기 때문에 props 안의 값을 불러서 사용하면 된다.
+- 예를 들어 위의 예제에서 넘겨준 name 에 rony 라는 값을 받아서 쓰려면 [props.name](http://props.name) 으로 값을 받아 쓰면 된다.
+- 혹시 해당 props 가 넘어오지 않는경우에 defaultProps 를 설정해주면 값이 넘어오지않는경우 해당 값을 사용하게 된다.
+
 ```jsx
 import React from 'react';
 
@@ -64,6 +72,7 @@ function Wrapper ({ children }) {
 
 export default Wrapper;
 ```
+
 ```jsx
 import React from 'react';
 
@@ -79,9 +88,12 @@ Hellow.defaultProps = {
 
 export default Hellow;
 ```
->>> ## children
->>> - children 은 컴포넌트 사이에 넘어가는 값이라고 보면된다.
->>> - 예를 들어 아래와 같은 버튼 컴포넌트가 있다고 했을때 해당 컴포넌트 사이에 위치한 `삭제` 라는 값이 props 의children 으로 넘어가게 된다.
+
+## children
+
+- children 은 컴포넌트 사이에 넘어가는 값이라고 보면된다.
+- 예를 들어 아래와 같은 버튼 컴포넌트가 있다고 했을때 해당 컴포넌트 사이에 위치한 `삭제` 라는 값이 props 의children 으로 넘어가게 된다.
+
 ```jsx
 // 부모 컴포넌트에서..
 <Button>삭제</Button>
