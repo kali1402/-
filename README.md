@@ -18,7 +18,7 @@
 
 # IT배움터
 
-## 1. 리액트 (1)
+## 1. 리액트 (1) 
 ## 정의
 
 - 부모 컴포넌트가 자식 컴포넌트에게 주는 값
@@ -105,6 +105,87 @@ function Button (props) {
 		<button>{props.children}</button>
 	);
 }
+```
+
+## 2. 리액트 (2) 
+## useState 란?
+
+- 동적인 데이터를 다루는 경우 사용한다.
+- useState 를 상단에서 불러와 주고 state 에 값을 담고 setState 에 변경할 값을 담아주는 방식으로 처리한다.
+
+## +, - 버튼 클릭으로 숫자를 증감시키는 기능 구현
+
+### Counter.js
+
+```jsx
+import React from 'react';
+
+function Counter () {
+  return (
+    <div>
+      <h1>0</h1>
+      <button>+1</button>
+      <button>-1</button>
+    </div>
+  );
+}
+
+export default Counter;
+```
+
+### App.js
+
+```jsx
+import React, { useState } from 'react';
+import Counter from './components/Counter';
+
+function App() {
+  return (
+    <>
+      <Counter /> 
+    </>    
+  );
+}
+
+export default App;
+```
+
+### 차증감 구현
+
+- 버튼 클릭시 숫자값을 변경하기 위해서는 useState 를 불러온 후 해당 state 변수에 값을 담는 처리를 해주어야 한다.
+- 여기서는 number 라는 값을 state 값으로 정한다.
+
+```jsx
+// useState 선언
+import React, { useState } from 'react';
+
+function Counter () {
+
+  // number 값을 선언하고 초기값을 넣어준다.
+  const [ number, setNumber ] = useState(0);
+
+  // 버튼 클릭시 number 값을 증가시킬 이벤트 구현
+  const plus = () => {
+    setNumber(currentNumber => currentNumber + 1);
+  }
+
+  // 버튼 클릭시 number 값 감소시킬 이벤트 구현
+  const minus = () => {
+    setNumber(currentNumber => currentNumber -1);
+  }
+
+  // 버튼 태그의 onClick 에 위에서 생성한 이벤트 함수를 넣어준다.
+  return (
+    <div>
+			{/* 출력하는 숫자는 셋팅된 number 변수값을 뿌려준다. */}
+      <h1>{number}</h1>
+      <button onClick={plus}>+1</button>
+      <button onClick={minus}>-1</button>
+    </div>
+  );
+}
+
+export default Counter;
 ```
 # 프로그래밍 상식
 > ## 1. 안드로이드 란?
