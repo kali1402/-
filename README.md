@@ -230,9 +230,6 @@ function App() {
 
 export default App;
 ```
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/68401e23-0968-412e-bf52-1e1f181dfd4e/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/68401e23-0968-412e-bf52-1e1f181dfd4e/Untitled.png)
-
 ### etc
 
 - vscode 의 아래의 확장프로그램을 이용하면 styled-components 의 명령 및 색상을 보다 보기쉽게 관리 할 수 있다.
@@ -242,10 +239,9 @@ export default App;
 >> __`안드로이드는 구글에서 만든 스마트폰용 운영체제입니다. 운영체제와 미들웨어, 사용자 인터페이스, 어플리케이션, MMS 서비스 등을 하나로 묶어 서비스를 제공하며 다양한 어플리케이션을 만들어 설치하면 실행될 수 있도록 구성된 어플리케이션 플랫폼이라고도 볼 수 있습니다. 많은 사람들이 iOS(애플 운영체제)에 견주어 스마트폰과 태블릿으로 안드로이드 운영체제를 사용하면서, 안드로이드는 세계 모바일 시장에서 가장 성공한 OS라는 평가를 받고있습니다. 안드로이드는 리눅스(Linux)를 기반으로 제작되었고 언어는 자바를 사용합니다.`__<br>
 ![](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20130504_35%2Fg_m8494_1367629956733Wq5yx_JPEG%2F%25BE%25C8%25B5%25E5%25B7%25CE%25C0%25CC%25B5%25E5.jpg&type=sc960_832)[『사진 출처』](https://blog.naver.com/g_m8494/150167283271)
 > ## 2. 안드로이드 명
->> [『사진 출처』](https://zetawiki.com/wiki/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C_%EB%B2%84%EC%A0%84_%EB%AA%A9%EB%A1%9D) <br>
 ![](https://github.com/kali1402/-/blob/main/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C%20%EB%AA%85.PNG?raw=true)<br><br>
 > ## 3. HTTP
->> ![](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20150120_18%2Fidea_mind_1421744811721wftA6_PNG%2F012015_0906_HTTP1.png&type=sc960_832)[『사진 출처』](https://blog.naver.com/idea_mind/220246518782)
+>> ![](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20150120_18%2Fidea_mind_1421744811721wftA6_PNG%2F012015_0906_HTTP1.png&type=sc960_832)
 >> ### Connectionless :
 >>> __`서버에 요청을 하고 클라이언트가 응답을 받으면 연결을 끊음
 응답을 받으면 연결이 끊어지기 때문에 접속 유지는 최소한으로 할 수 있다. 유저가 많은 웹서비스에서 많은 요청 처리를 가능하게 함
@@ -275,14 +271,11 @@ export default App;
 >>> __`HEAD : GET요청과 비슷하다. HTTP 헤더정보만 요청. 클라이언트는 해당 자원과 관련 없이 헤더만을 통해 정보를 가져올 수 있다.`__ <br>
 >>> __`TRACE : 클라이언트와 목적지 서버 사이에 있는 HTTP Application의 요청/응답을 연속적으로 계속 따라가 자신이 보낸 메세지의 이상유무 파악하기 위한 요청. 서버는 응답 메세지 본문에 자신이 받은 요청 메세지를 넣어 응답. 진단 위해 사용`__ <br>
 >>> __`OPTION : 서버에 특정 리소스가 어떤 메소드를 지원하는지 물어보는 요청`__
-> ## 4. 객체지향언어(Object-Oriented Programming, OOP)란?
->> ![](https://image.shutterstock.com/image-vector/oop-arrows-concept-vector-illustration-260nw-409775206.jpg)[『사진 출처』](https://www.shutterstock.com/ko/search/object+oriented+programming)<br>
+> ## 4. 객체지향언어(Object-Oriented Programming, OOP)란?(https://www.shutterstock.com/ko/search/object+oriented+programming)<br>
 >> __`객체지향프로그래밍이라는 것은 컴퓨터 프로그래밍의 패러다임 중 하나입니다. 컴퓨터 프로그램을 명령어의 목록으로 보는 시각에서 벗어나 여러 개의 독립된 단위, 즉, "객체" 들의 모임으로 파악하고자 하는 것입니닫. 각각의 개체는 메시지를 주고 받고(Message Passing) 데이터를 처리할 수 있습니다.`__
 > ## 5. DDL, DML, DCL, TCL
->> [『사진 출처』](https://brownbears.tistory.com/180)
 >> ![](https://github.com/kali1402/-/blob/main/sql.PNG?raw=true)
 > ## 6. 네트워크 명령어 - 윈도우
->> [『글 출처』](https://dinding.tistory.com/24)
 >> ### 1. Tracert
 >>> __지정된 호스트에 도달할 때까지 통과하는 경로의 정보와 지연시간을 추적__
 >>> __Tracert -d host (d 옵션은 DNS reverse look-up을 시도하지 말라는 것)__
@@ -355,10 +348,9 @@ export default App;
 >>> __gateway      게이트웨이를 지정합니다.__<br>
 >>> __interface    지정한 경로에 대한 인터페이스 번호입니다.__<br>
 >>> __METRIC       대상의 비용과 같은 메트릭을 지정합니다.__<br>
->> ### + 리눅스 명령어[『사진 출처』](https://www.stevenjlee.net/2020/05/23/%EB%94%B0%EB%9D%BC%ED%95%98%EA%B8%B0-%EA%B8%B0%EB%B3%B8-%EB%A6%AC%EB%88%85%EC%8A%A4linux-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%9A%94%EC%95%BD-%EB%AA%A8%EC%9D%8C/)<br>
+>> ### + 리눅스 명령어
 >> ![](https://www.stevenjlee.net/wp-content/uploads/2020/05/isnefnt32wn21-740x889.jpg)
 > ## 7. OSI 7계층
->> [『글 출처』](https://reakwon.tistory.com/59)
 >> ### 물리계층(Physical Layer)
 >>> __7계층 중 최하위 계층입니다. 주로 전기적, 기계적, 기능적인 특성을 이용해 데이터를 전송하게 됩니다. 데이터는 0과 1의 비트열, 즉 On, Off의 전기적 신호 상태로 이루어져있지요.__<br>
 >>> __이 계층은 단지 데이터를 전달하기만 합니다. 어떤 에러가 있는지 등 그런 기능에는 전혀 관여하지 않습니다.__<br>
@@ -391,13 +383,10 @@ export default App;
 >>> __사용자와 가장 가까운 계층이 바로 응용 계층입니다. 우리가 사용하는 응용 서비스나 프로세스가 바로 응용계층에서 동작합니다.__<br>
 >>
 >> ![](https://lh3.googleusercontent.com/proxy/2IklZi7pYuLBo4S5Nkt_DE7ByCZn77jZAy98MMI2EqqSY-V6lY7B6hrJcAbKrivJ02--KAMywvmts--cUOcoXl15Nj1vBYNZoOj5iEXH_tWOOO_xnjHjKoDuoaPwBnAXXFx9P6i8rya7P6GIkfUprhGn19CQk4u72xC3A1o)
->> [『사진 출처』](http://wiki.hash.kr/index.php/OSI_7_%EA%B3%84%EC%B8%B5)
 > ## 8. HTML, CSS는 프로그래밍 언어가 아니다.
->> [『글 출처』](https://medium.com/@yjk9313/html%EC%9D%B4-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%96%B8%EC%96%B4%EA%B0%80-%EC%95%84%EB%8B%8C-%EC%9D%B4%EC%9C%A0-e7ccdf2ea24b)
 >> ### HTML은 프로그래밍 언어가 아니다. Hyper Text Mark up Language, 한마디로 마크업 언어이다(mark up = 표시하다)
 >>> __프로그래밍 언어란, 컴퓨터에서 실행 될 프로그램을 만들기 위해 사람의 문자로 만들어 진 수단이다.__<br>
 >>> __-파이썬, 자바스크립트, 자바, C언어 등이 대표적이다. 이들은 사람의 생각을 컴퓨터가 연산 처리 할 수 있도록 그 내용을 문자로 전달하는 수단이다.__<br>
 >>> __그러나 HTML은 단독으로 프로그램을 만들 수 없다. HTML은 컴퓨터에게 어떤것이 \<Title>인지, \<Body>,\<Main>인지 구분할 수 있게 하는 언어이다. 말 그대로 Mark up(표시)하는 언어이다. HTMl을 보기 좋게 꾸며주는 CSS또한 마찬가지이다.__<br>
 >>> __정리하자면, HTML은 컴퓨터에게 구획을 나누어 인식시켜주는 Mark up 언어이고, CSS는 사람이 보기 좋게 디자인을 변경시켜주는 언어이다.__<br>
->> [『사진 출처』](https://medium.com/@yjk9313/html%EC%9D%B4-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%96%B8%EC%96%B4%EA%B0%80-%EC%95%84%EB%8B%8C-%EC%9D%B4%EC%9C%A0-e7ccdf2ea24b)<br>
 >> ![](https://miro.medium.com/max/700/0*rCoIWITij3nvAziF.jpg)
