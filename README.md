@@ -1,6 +1,6 @@
 
 
-> ## 6. 네트워크 명령어
+> ## 6. 네트워크 명령어 - 윈도우
 >> ### 1. Tracert
 >>> __지정된 호스트에 도달할 때까지 통과하는 경로의 정보와 지연시간을 추적__
 >>> __Tracert -d host (d 옵션은 DNS reverse look-up을 시도하지 말라는 것)__
@@ -74,5 +74,7 @@
 >>> __interface    지정한 경로에 대한 인터페이스 번호입니다.__<br>
 >>> __METRIC       대상의 비용과 같은 메트릭을 지정합니다.__<br>
 [『글 출처』](https://dinding.tistory.com/24)
+>> [『사진 출처』](https://www.stevenjlee.net/2020/05/23/%EB%94%B0%EB%9D%BC%ED%95%98%EA%B8%B0-%EA%B8%B0%EB%B3%B8-%EB%A6%AC%EB%88%85%EC%8A%A4linux-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%9A%94%EC%95%BD-%EB%AA%A8%EC%9D%8C/)<br>
+>> ![](https://www.stevenjlee.net/wp-content/uploads/2020/05/isnefnt32wn21-740x889.jpg)
 > ## 7.
 > ## 8.
