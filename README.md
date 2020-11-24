@@ -18,14 +18,14 @@
 	- __[『7. 리액트 (7)』](https://github.com/kali1402/-#7-%EB%A6%AC%EC%95%A1%ED%8A%B8-7)__<br>
 	- __[『8. 리액트 (8)』](https://github.com/kali1402/-#8-%EB%A6%AC%EC%95%A1%ED%8A%B8-8)__<br>
 - __[『프로그래밍상식』](https://github.com/kali1402/-#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%83%81%EC%8B%9D)__
-	- __[『1. 리액트 (1)』](https://github.com/kali1402/-#1-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EB%9E%80)__<br>
-	- __[『2. 리액트 (2)』](https://github.com/kali1402/-#2-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EB%AA%85)__<br>
+	- __[『1. 안드로이드 란?』](https://github.com/kali1402/-#1-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EB%9E%80)__<br>
+	- __[『2. 안드로이드 명』](https://github.com/kali1402/-#2-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EB%AA%85)__<br>
 	- __[『3. HTTP』](https://github.com/kali1402/-#3-http)__<br>
-	- __[『4. 리액트 (4)』](https://github.com/kali1402/-#4-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%96%B8%EC%96%B4object-oriented-programming-oop%EB%9E%80)__<br>
-	- __[『5. 리액트 (5)』](https://github.com/kali1402/-#5-ddl-dml-dcl-tcl)__<br>
-	- __[『6. 리액트 (6)』](https://github.com/kali1402/-#6-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%AA%85%EB%A0%B9%EC%96%B4---%EC%9C%88%EB%8F%84%EC%9A%B0)__<br>
-	- __[『7. 리액트 (7)』](https://github.com/kali1402/-#7-osi-7%EA%B3%84%EC%B8%B5)__<br>
-	- __[『8. 리액트 (8)』](https://github.com/kali1402/-#8-html-css%EB%8A%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%96%B8%EC%96%B4%EA%B0%80-%EC%95%84%EB%8B%88%EB%8B%A4)__<br>
+	- __[『4. 객체지향언어(Object-Oriented Programming, OOP)란?』](https://github.com/kali1402/-#4-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%96%B8%EC%96%B4object-oriented-programming-oop%EB%9E%80)__<br>
+	- __[『5. DDL, DML, DCL, TCL』](https://github.com/kali1402/-#5-ddl-dml-dcl-tcl)__<br>
+	- __[『6. 네트워크 명령어 - 윈도우』](https://github.com/kali1402/-#6-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%AA%85%EB%A0%B9%EC%96%B4---%EC%9C%88%EB%8F%84%EC%9A%B0)__<br>
+	- __[『7. OSI 7계층』](https://github.com/kali1402/-#7-osi-7%EA%B3%84%EC%B8%B5)__<br>
+	- __[『8. HTML, CSS는 프로그래밍 언어가 아니다.』](https://github.com/kali1402/-#8-html-css%EB%8A%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%96%B8%EC%96%B4%EA%B0%80-%EC%95%84%EB%8B%88%EB%8B%A4)__<br>
 # 나의 포트폴리오
 > ### 1. Yacht_dice 게임 만들기 (html,js,css)
 > - __[『코드 보기』](https://github.com/kali1402/yacht_dice) [『플레이 해보기』](http://yacht.kro.kr/)__
