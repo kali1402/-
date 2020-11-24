@@ -27,24 +27,24 @@
 >>> - 예를 들어 Hello 라는 컴포넌트를 호출하고 있다면 
 >>> `<Hello name='kali' />`
 >>> 와 같이 name 이라는 props 에 rony 라는 값을 담아 넘길수 있다.
-```jsx
-import React, { useState } from 'react';
-import Hellow from './components/Hellow';
-import Wrapper from './components/Wrapper';
+>>> ```jsx
+>>> import React, { useState } from 'react';
+>>> import Hellow from './components/Hellow';
+>>> import Wrapper from './components/Wrapper';
 
-function App() {
-  return (
-    <>
-      <Wrapper>
-        <Hellow name="rony" color="red" />
-        <Hellow color="blue" />
-      </Wrapper>      
-    </>    
-  );
-}
+>>> function App() {
+>>>   return (
+>>>     <>
+>>>       <Wrapper>
+>>>         <Hellow name="rony" color="red" />
+>>>         <Hellow color="blue" />
+>>>       </Wrapper>      
+>>>     </>    
+>>>   );
+>>> }
 
-export default App;
-```
+>>> export default App;
+>>> ```
 >>> ### 자식 컴포넌트에서..
 >>> - 부모 컴포넌트에서 넘어온 값은 props 라는 변수에 할당되어있기 때문에 props 안의 값을 불러서 사용하면 된다.
 >>> - 예를 들어 위의 예제에서 넘겨준 name 에 rony 라는 값을 받아서 쓰려면 [props.name](http://props.name) 으로 값을 받아 쓰면 된다.
