@@ -1,5 +1,6 @@
 
 > ## 7. OSI 7계층
+>> [『글 출처』](https://reakwon.tistory.com/59)
 >> ### 물리계층(Physical Layer)
 >>> __7계층 중 최하위 계층입니다. 주로 전기적, 기계적, 기능적인 특성을 이용해 데이터를 전송하게 됩니다. 데이터는 0과 1의 비트열, 즉 On, Off의 전기적 신호 상태로 이루어져있지요.__<br>
 >>> __이 계층은 단지 데이터를 전달하기만 합니다. 어떤 에러가 있는지 등 그런 기능에는 전혀 관여하지 않습니다.__<br>
@@ -30,7 +31,7 @@
 >>> __MIME 인코딩이나 암호화 등의 동작이 표현계층에서 이루어집니다. EBCDIC로 인코딩된 파일을 ASCII 로 인코딩된 파일로 바꿔주는 것이 한가지 예이지요.__<br>
 >> ### 응용 계층(Application Layer)
 >>> __사용자와 가장 가까운 계층이 바로 응용 계층입니다. 우리가 사용하는 응용 서비스나 프로세스가 바로 응용계층에서 동작합니다.__<br>
->> [『글 출처』](https://reakwon.tistory.com/59)
+
 >> [『사진 출처』](http://wiki.hash.kr/index.php/OSI_7_%EA%B3%84%EC%B8%B5)
 >> ![](https://lh3.googleusercontent.com/proxy/2IklZi7pYuLBo4S5Nkt_DE7ByCZn77jZAy98MMI2EqqSY-V6lY7B6hrJcAbKrivJ02--KAMywvmts--cUOcoXl15Nj1vBYNZoOj5iEXH_tWOOO_xnjHjKoDuoaPwBnAXXFx9P6i8rya7P6GIkfUprhGn19CQk4u72xC3A1o)
 > ## 8.
