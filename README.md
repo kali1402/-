@@ -1,7 +1,7 @@
 
 
 > ## 6. 네트워크 명령어 - 윈도우
->> [『글 출처』](https://dinding.tistory.com/24)<br>
+>> [『글 출처』](https://dinding.tistory.com/24)
 >> ### 1. Tracert
 >>> __지정된 호스트에 도달할 때까지 통과하는 경로의 정보와 지연시간을 추적__
 >>> __Tracert -d host (d 옵션은 DNS reverse look-up을 시도하지 말라는 것)__
