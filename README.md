@@ -59,3 +59,4 @@
 >>> __`OPTION : 서버에 특정 리소스가 어떤 메소드를 지원하는지 물어보는 요청`__
 > ## 4. 객체지향언어(Object-Oriented Programming, OOP)란?
 >> __`객체지향프로그래밍이라는 것은 컴퓨터 프로그래밍의 패러다임 중 하나입니다. 컴퓨터 프로그램을 명령어의 목록으로 보는 시각에서 벗어나 여러 개의 독립된 단위, 즉, "객체" 들의 모임으로 파악하고자 하는 것입니닫. 각각의 개체는 메시지를 주고 받고(Message Passing) 데이터를 처리할 수 있습니다.`__
+>> ![](https://image.shutterstock.com/image-vector/oop-arrows-concept-vector-illustration-260nw-409775206.jpg)[『출처』](https://www.shutterstock.com/ko/search/object+oriented+programming)
